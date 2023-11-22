@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #6C7EE1;">
+         <left>
+            <VBox prefHeight="333.0" prefWidth="118.0" style="-fx-background-color: #6C7EE1; -fx-background-radius: 13 13 13 13;" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+               </BorderPane.margin>
+               <children>
+                  <Separator prefWidth="200.0" />
+                  <Button fx:id="user" mnemonicParsing="false" prefHeight="44.0" prefWidth="100.0" style="-fx-background-radius: 12 12 12 12;" text="User">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="34.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/user.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="SansSerif Regular" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="vip" mnemonicParsing="false" prefHeight="44.0" prefWidth="100.0" style="-fx-background-radius: 12 12 12 12;" text="Vip">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="48.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/vip.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="SansSerif Regular" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Separator prefWidth="200.0" />
+                  <Button fx:id="add" mnemonicParsing="false" prefHeight="43.0" prefWidth="145.0" style="-fx-background-radius: 12 12 12 12;" text="Add">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/add.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="43.0" prefWidth="145.0" style="-fx-background-radius: 12 12 12 12;" text="Game">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/playStation.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="change" mnemonicParsing="false" prefHeight="43.0" prefWidth="145.0" style="-fx-background-radius: 12 12 12 12;" text="Change">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </VBox.margin></Button>
+                  <Button fx:id="delete" mnemonicParsing="false" prefHeight="43.0" prefWidth="145.0" style="-fx-background-radius: 12 12 12 12;" text="Delete">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin></Button>
+                  <Button mnemonicParsing="false" text="speak" />
+               </children></VBox>
+         </left>
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFC4A4;" BorderPane.alignment="CENTER">
+               <children>
+                  <WebView fx:id="defView" prefHeight="350.0" prefWidth="267.0" />
+                  <ListView fx:id="searchView" layoutY="-15.0" prefHeight="222.0" prefWidth="266.0" style="-fx-background-radius: 10 10 14 14;" />
+               </children>
+            </Pane>
+         </center>
+         <right>
+            <VBox prefHeight="300.0" prefWidth="170.0" BorderPane.alignment="CENTER">
+               <children>
+                  <FlowPane prefHeight="282.0" prefWidth="181.0">
+                     <children>
+                        <ListView fx:id="wordView" prefHeight="339.0" prefWidth="200.0" style="-fx-background-radius: 0 0 0 15;" />
+                     </children>
+                  </FlowPane>
+               </children>
+            </VBox>
+         </right>
+         <top>
+            <AnchorPane prefHeight="25.0" prefWidth="600.0" style="-fx-background-color: #6C7EE1;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="435.0" layoutY="7.0" prefHeight="42.0" prefWidth="143.0" text="Dictionary" textFill="#fbad20" AnchorPane.leftAnchor="450.0">
+                     <font>
+                        <Font name="Edwardian Script ITC" size="33.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Separator layoutX="399.0" orientation="VERTICAL" prefHeight="49.0" prefWidth="5.0" style="-fx-background-color: #92B9E3;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <ImageView fitHeight="58.0" fitWidth="66.0" layoutX="-2.0" layoutY="67.0" pickOnBounds="true" AnchorPane.bottomAnchor="-6.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@image/dictionaryIcon.png" />
+                     </image>
+                  </ImageView>
+                  <HBox alignment="CENTER" layoutX="140.0" layoutY="16.0" prefHeight="40.0" prefWidth="253.0" style="-fx-background-color: #ffffff; -fx-background-radius: 12 12 12 12;" AnchorPane.bottomAnchor="8.0" AnchorPane.topAnchor="14.0">
+                     <children>
+                        <TextField fx:id="textField" prefHeight="57.0" prefWidth="210.0" promptText="Search" style="-fx-background-radius: 12 12 12 12; -fx-background-position: 5 5; -fx-background-color: transparent;">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="googleSearch" alignment="BOTTOM_LEFT" mnemonicParsing="false" prefHeight="23.0" prefWidth="23.0" style="-fx-background-color: fffffff; -fx-background-color: transparent;">
+                           <graphic>
+                              <ImageView fx:id="find" fitHeight="27.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/search.png" />
+                                 </image>
+                                 <effect>
+                                    <Glow />
+                                 </effect>
+                              </ImageView>
+                           </graphic>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                        <ImageView fitHeight="19.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/googleSearch.png" />
+                           </image>
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <Button alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="23.0" style="-fx-background-color: fffffff; -fx-background-color: transparent;">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+#root {
+    -fx-background-color: linear-gradient(to left bottom, #FFF2D8, #EAD7BB, #BCA37F, #113946);
+}
+
+#userButton:hover {
+    -fx-background-color: #F4BF96;
+    -fx-border-color: white;
+    -fx-border-width: 0px 0px 0px 3px;
+}
+
+#user:hover {
+    -fx-background-color: #F4BF98;
+    -fx-border-color: #FAF8ED;
+    -fx-border-width: 0px 0px 0px 5px;
+}
+#vip:hover {
+    -fx-background-color: #F4BF98;
+    -fx-border-color: #FAF8ED;
+    -fx-border-width: 0px 0px 0px 5px;
+}
+#add:hover {
+    -fx-background-color: #F4BF98;
+    -fx-border-color: #FAF8ED;
+    -fx-border-width: 0px 0px 0px 5px;
+}
+#find:hover{
+    -fx-background-color: #FAF8ED;
+    -fx-border-color:  #F9B572;
+
+}
+#find {
+    -fx-border-radius: 20;
+    -fx-background-color:  #F9B572;
+    -fx-border-color:  #F9B572;
+    -fx-background-radius: 22;
+    -fx-border-width: 6px;
+}
+#googleSearch {
+    -fx-background-color:  #F9B572;
+    -fx-border-color:  #F9B572;
+}
+#googleSearch:hover{
+    -fx-background-color: #FAF8ED;
+}
+
+
