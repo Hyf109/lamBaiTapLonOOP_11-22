@@ -1,9 +1,13 @@
 package com.example.demo;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.stage.Stage;
+
 import java.io.IOException;
 
 public class Controller {
+
+    private Scene scene;
     private Root root;
     private WordViewList wordViewList;
     private DefView defView;
@@ -16,6 +20,7 @@ public class Controller {
     private User user;
     private VipFunction vipFunction;
     private UserButton userButton;
+
 
     public void init(Scene scene) {
         root = new Root();

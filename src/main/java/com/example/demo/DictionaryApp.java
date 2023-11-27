@@ -6,7 +6,6 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class DictionaryApp extends Application {
-
     private static final String FXML_FILE_PATH = "JavaFxTemp.fxml";
     private static Controller controller = new Controller();
     private Dictionary dic = new Dictionary();
@@ -19,7 +18,6 @@ public class DictionaryApp extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-
         Parent root = FXMLLoader.load(getClass().getResource(FXML_FILE_PATH));
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
