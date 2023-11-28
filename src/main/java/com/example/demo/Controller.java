@@ -19,7 +19,7 @@ public class Controller {
     private GoogleSearchingFunction googleSearchingFunction;
     private User user;
     private VipFunction vipFunction;
-    private UserButton userButton;
+    private GameButton gameButton;
 
 
     public void init(Scene scene) {
@@ -34,7 +34,7 @@ public class Controller {
         googleSearchingFunction = new GoogleSearchingFunction(scene);
         vipFunction = new VipFunction(scene);
         user = new User(scene);
-        userButton = new UserButton(scene);
+        gameButton = new GameButton(scene);
     }
 
     public void initData() throws IOException {
@@ -57,7 +57,7 @@ public class Controller {
         googleSearchingFunction.setGoogleSearchBtn(defView, findField);
         vipFunction.setVipBtn();
         user.setUserBtn();
-        userButton.setUserButton();
+        gameButton.setUserButton();
     }
 
     public void hideSearchView(Parent root) {

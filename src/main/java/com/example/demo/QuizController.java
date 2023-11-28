@@ -60,17 +60,17 @@ public class QuizController {
         }
     }
 
-    static int fulltime = 100;
+    static int fullTime = 100;
     public Timeline timeline = new Timeline();
 
     private void loadTime() {
 
-        TimeRemain.setText(String.valueOf(fulltime));
+        TimeRemain.setText(String.valueOf(fullTime));
         timeline = new Timeline(new KeyFrame(Duration.seconds(1), e -> {
-            fulltime--;
-            TimeRemain.setText(String.valueOf(fulltime));
+            fullTime--;
+            TimeRemain.setText(String.valueOf(fullTime));
         }));
-        timeline.setCycleCount(fulltime);
+        timeline.setCycleCount(fullTime);
         timeline.play();
         timeline.setOnFinished(e -> {
             try {
@@ -239,7 +239,7 @@ public class QuizController {
                 QuizController.checkStatus.set(i, false);
                 QuizController.checkResult.set(i, false);
             }
-            QuizController.fulltime = 100;
+            QuizController.fullTime = 100;
             QuizController.counter = 0;
             QuizController.correct = 0;
             QuizController.wrong = 0;
@@ -464,7 +464,7 @@ public class QuizController {
                 QuizController.checkStatus.set(i, false);
                 QuizController.checkResult.set(i, false);
             }
-            QuizController.fulltime = 100;
+            QuizController.fullTime = 100;
             QuizController.counter = 0;
             QuizController.correct = 0;
             QuizController.wrong = 0;

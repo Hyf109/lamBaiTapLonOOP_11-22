@@ -1,4 +1,5 @@
 package com.example.demo;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -34,11 +35,11 @@ public class DictionaryApp extends Application {
     @Override
     public void stop() throws Exception {
         super.stop();
-        if(controller.getChanged()){
+        if (controller.getChanged()) {
             his.saveHistory();
             dic.exportToFile();
             System.out.println("Save changed");
-        }else{
+        } else {
             System.out.println("nothing changed");
         }
 

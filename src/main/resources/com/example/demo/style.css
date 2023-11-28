@@ -6,6 +6,7 @@
     -fx-background-color: #F4BF96;
     -fx-border-color: white;
     -fx-border-width: 0px 0px 0px 3px;
+    -fx-border-radius: 10 10 10 10;
 }
 
 #user:hover {

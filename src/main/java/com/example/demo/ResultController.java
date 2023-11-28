@@ -13,10 +13,11 @@ import javafx.stage.StageStyle;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
+
 public class ResultController {
 
     @FXML
-    public Label marks, markstext, correcttext, wrongtext;
+    public Label marks, marksText, correctText, wrongText;
 
     @FXML
     public Label remark;
@@ -39,11 +40,11 @@ public class ResultController {
 
     public void Retry(ActionEvent event) {
         try {
-            for (int i = 0;i <=19; i++) {
+            for (int i = 0; i <= 19; i++) {
                 QuizController.checkStatus.set(i, false);
                 QuizController.checkResult.set(i, false);
             }
-            QuizController.fulltime = 100;
+            QuizController.fullTime = 100;
             QuizController.counter = 0;
             QuizController.correct = 0;
             QuizController.wrong = 0;
@@ -64,11 +65,11 @@ public class ResultController {
 
     public void ReturnToMenu(ActionEvent event) {
         try {
-            for (int i = 0;i <=19; i++) {
+            for (int i = 0; i <= 19; i++) {
                 QuizController.checkStatus.set(i, false);
                 QuizController.checkResult.set(i, false);
             }
-            QuizController.fulltime = 100;
+            QuizController.fullTime = 100;
             QuizController.counter = 0;
             QuizController.correct = 0;
             QuizController.wrong = 0;
@@ -85,9 +86,6 @@ public class ResultController {
             e.printStackTrace();
         }
     }
-
-
-
 
 
     public void handleCloseAction2() {
@@ -113,26 +111,24 @@ public class ResultController {
         }
 
 
-
-
-        remainTime = QuizController.fulltime;
+        remainTime = QuizController.fullTime;
         RemainTime.setText("REMAIN TIME : " + String.valueOf(remainTime) + "S");
         timeStamp = new SimpleDateFormat("HH:mm:ss dd-MM-yyyy").format(Calendar.getInstance().getTime());
         Date.setText(timeStamp);
         correct = QuizController.correct;
         wrong = QuizController.wrong;
 
-        correcttext.setText("Correct Answers : " + QuizController.correct);
-        wrongtext.setText("Incorrect Answers : " + QuizController.wrong);
+        correctText.setText("Correct Answers : " + QuizController.correct);
+        wrongText.setText("Incorrect Answers : " + QuizController.wrong);
 
         marks.setText(correct * 5 + "/100");
 
 
         int completed = correct + wrong;
-        markstext.setText(String.valueOf(completed) + " QUESTIONS COMPLETED");
+        marksText.setText(String.valueOf(completed) + " QUESTIONS COMPLETED");
 
 
-        if (correct<4) {
+        if (correct < 4) {
             remark.setText("BAD !");
         } else if (correct < 10) {
             remark.setText("NEED MORE PRACTICE !");

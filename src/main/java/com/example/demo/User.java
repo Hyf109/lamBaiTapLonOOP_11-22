@@ -24,7 +24,7 @@ public class User {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("User");
         alert.setHeaderText("The \"User\" function will be availble in next version!");
-        alert.setContentText("You will be able to creat your own account!");
+        alert.setContentText("You will be able to create your own account!");
         alert.showAndWait();
 
     }
