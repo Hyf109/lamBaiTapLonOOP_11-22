@@ -15,6 +15,8 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+
+
 public class Test {
     @FXML
     private Button Play;
@@ -24,6 +26,30 @@ public class Test {
 
     @FXML
     private Button Exit;
+
+    @FXML
+    private Button Return;
+
+    @FXML
+    public void ReturnToMenu(ActionEvent event) {
+        try {
+            Stage thisStage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+            thisStage.close();
+            Parent root = FXMLLoader.load(getClass().getResource("JavaFxTemp.fxml"));
+            Scene scene = new Scene(root);
+            Stage quizstage = new Stage();
+            quizstage.setScene(scene);
+            quizstage.setTitle("Dictionary");
+            quizstage.show();
+            Controller controller = new Controller();
+            controller.init(scene);
+            controller.initData();
+            controller.hideSearchView(root);
+            controller.addFunction();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
 
 

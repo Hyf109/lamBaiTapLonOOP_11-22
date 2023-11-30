@@ -123,8 +123,8 @@ public class ResultController {
 
         marks.setText(correct * 5 + "/100");
 
-
-        int completed = correct + wrong;
+        int completed = 0;
+        completed = correct + wrong;
         marksText.setText(String.valueOf(completed) + " QUESTIONS COMPLETED");
 
 

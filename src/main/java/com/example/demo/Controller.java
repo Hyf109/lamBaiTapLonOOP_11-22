@@ -57,7 +57,7 @@ public class Controller {
         googleSearchingFunction.setGoogleSearchBtn(defView, findField);
         vipFunction.setVipBtn();
         user.setUserBtn();
-        gameButton.setUserButton();
+
     }
 
     public void hideSearchView(Parent root) {
