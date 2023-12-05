@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.paint.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Test">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Test">
    <children>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="554.0" prefWidth="837.0" style="-fx-background-color: #e3e4d4; -fx-border-color: brown; -fx-border-width: 5px;">
          <children>
-            <Label layoutX="105.0" layoutY="57.0" prefHeight="95.0" prefWidth="641.0" text="   ENGLISH LEARNING GAME" textAlignment="CENTER" textFill="#4c20a4">
+            <Label layoutX="123.0" layoutY="57.0" prefHeight="95.0" prefWidth="641.0" text="   ENGLISH LEARNING GAME" textAlignment="CENTER" textFill="#4c20a4">
                <font>
                   <Font name="Castellar" size="37.0" />
                </font>
@@ -56,7 +63,7 @@
                   </LinearGradient>
                </textFill>
             </Button>
-            <Button fx:id="Exit" layoutX="204.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleCloseAction" prefHeight="80.0" prefWidth="429.0" style="-fx-background-color: #9489c6; -fx-background-radius: 50PX; -fx-border-radius: 50PX;" text="   EXIT">
+            <Button fx:id="Exit" alignment="CENTER" layoutX="204.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleCloseAction" prefHeight="80.0" prefWidth="429.0" style="-fx-background-color: #9489c6; -fx-background-radius: 50PX; -fx-border-radius: 50PX;" text="   EXIT">
                <font>
                   <Font name="System Bold Italic" size="36.0" />
                </font>
@@ -103,6 +110,15 @@
                   <Font name="Berlin Sans FB" size="12.0" />
                </font>
             </Button>
+            <Pane layoutY="34.0" prefHeight="183.0" prefWidth="171.0">
+               <children>
+                  <ImageView fitHeight="156.0" fitWidth="99.0" layoutX="36.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/gameExam.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
          </children>
       </AnchorPane>
    </children>

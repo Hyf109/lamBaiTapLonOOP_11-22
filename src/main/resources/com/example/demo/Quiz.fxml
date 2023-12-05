@@ -6,6 +6,7 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.paint.LinearGradient?>
 <?import javafx.scene.paint.RadialGradient?>
@@ -14,27 +15,6 @@
 
 <AnchorPane fx:id="QuestionPane" prefHeight="641.0" prefWidth="881.0" style="-fx-background-color: #e3e4d4; -fx-border-width: 5px; -fx-border-color: brown;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.QuizController">
    <children>
-      <Label fx:id="Question" alignment="CENTER" layoutX="26.0" layoutY="166.0" prefHeight="104.0" prefWidth="842.0" style="-fx-background-color: #e3e4d4; -fx-border-color: black; -fx-border-width: 2px;" text="Question" textAlignment="CENTER" wrapText="true">
-         <font>
-            <Font name="Times New Roman Bold" size="18.0" />
-         </font>
-         <textFill>
-            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
-               <stops>
-                  <Stop>
-                     <color>
-                        <Color red="0.3552631437778473" green="0.2006578892469406" blue="0.2006578892469406" />
-                     </color>
-                  </Stop>
-                  <Stop offset="1.0">
-                     <color>
-                        <Color red="0.09210526198148727" green="0.04733186960220337" blue="0.04733186960220337" />
-                     </color>
-                  </Stop>
-               </stops>
-            </RadialGradient>
-         </textFill>
-      </Label>
       <Button fx:id="A" layoutX="26.0" layoutY="282.0" mnemonicParsing="false" onAction="#AClicked" prefHeight="76.0" prefWidth="842.0" style="-fx-background-color: #44189a; -fx-background-radius: 64px; -fx-border-radius: 10px;" text="Dattebayo" textFill="WHITE">
          <font>
             <Font name="Times New Roman Bold" size="14.0" />
@@ -141,87 +121,140 @@
             </LinearGradient>
          </textFill>
       </Button>
-      <Button fx:id="One" layoutX="25.0" layoutY="119.0" mnemonicParsing="false" onAction="#Move1" prefHeight="38.0" prefWidth="42.6" style="-fx-border-image-width: 3px;" text="1">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font>
-      </Button>
-      <Button fx:id="Two" layoutX="68.0" layoutY="119.0" mnemonicParsing="false" onAction="#Move2" prefHeight="38.0" prefWidth="42.6" style="-fx-border-width: 3px;" text="2">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font></Button>
-      <Button fx:id="Three" layoutX="109.0" layoutY="119.0" mnemonicParsing="false" onAction="#Move3" prefHeight="38.0" prefWidth="42.6" style="-fx-border-image-width: 3px;" text="3">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font></Button>
-      <Button fx:id="Four" layoutX="152.0" layoutY="119.0" mnemonicParsing="false" onAction="#Move4" prefHeight="38.0" prefWidth="42.6" style="-fx-border-width: 3px;" text="4">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font></Button>
-      <Button fx:id="Five" layoutX="194.0" layoutY="119.0" mnemonicParsing="false" onAction="#Move5" prefHeight="38.0" prefWidth="42.6" style="-fx-border-width: 3px;" text="5">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font></Button>
-      <Button fx:id="Fourteen" layoutX="578.0" layoutY="119.0" mnemonicParsing="false" onAction="#Move14" prefHeight="38.0" prefWidth="42.6" style="-fx-border-width: 3px;" text="14">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font></Button>
-      <Button fx:id="Nine" layoutX="365.0" layoutY="119.0" mnemonicParsing="false" onAction="#Move9" prefHeight="38.0" prefWidth="42.6" style="-fx-border-width: 3px;" text="9">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font></Button>
-      <Button fx:id="Fifteen" layoutX="620.0" layoutY="119.0" mnemonicParsing="false" onAction="#Move15" prefHeight="38.0" prefWidth="43.0" style="-fx-border-width: 3px;" text="15">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font></Button>
-      <Button fx:id="Twenty" layoutX="833.0" layoutY="119.0" mnemonicParsing="false" onAction="#Move20" prefHeight="38.0" prefWidth="42.6" style="-fx-border-width: 3px;" text="20">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font></Button>
-      <Button fx:id="Sixteen" layoutX="663.0" layoutY="119.0" mnemonicParsing="false" onAction="#Move16" prefHeight="38.0" prefWidth="42.6" style="-fx-border-width: 3px;" text="16">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font></Button>
-      <Button fx:id="Eleven" layoutX="450.0" layoutY="119.0" mnemonicParsing="false" onAction="#Move11" prefHeight="38.0" prefWidth="42.6" style="-fx-border-width: 3px;" text="11">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font></Button>
-      <Button fx:id="Seven" layoutX="280.0" layoutY="119.0" mnemonicParsing="false" onAction="#Move7" prefHeight="38.0" prefWidth="42.6" style="-fx-border-width: 3px;" text="7">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font></Button>
-      <Button fx:id="Seventeen" layoutX="705.0" layoutY="119.0" mnemonicParsing="false" onAction="#Move17" prefHeight="38.0" prefWidth="42.6" style="-fx-border-width: 3px;" text="17">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font></Button>
-      <Button fx:id="Nineteen" layoutX="791.0" layoutY="119.0" mnemonicParsing="false" onAction="#Move19" prefHeight="38.0" prefWidth="42.6" style="-fx-border-width: 3px;" text="19">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font></Button>
-      <Button fx:id="Eighteen" layoutX="748.0" layoutY="119.0" mnemonicParsing="false" onAction="#Move18" prefHeight="38.0" prefWidth="42.6" style="-fx-border-width: 3px;" text="18">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font></Button>
-      <Button fx:id="Six" layoutX="237.0" layoutY="119.0" mnemonicParsing="false" onAction="#Move6" prefHeight="38.0" prefWidth="42.6" style="-fx-border-width: 3px;" text="6">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font></Button>
-      <Button fx:id="Eight" layoutX="322.0" layoutY="119.0" mnemonicParsing="false" onAction="#Move8" prefHeight="38.0" prefWidth="42.6" style="-fx-border-width: 3px;" text="8">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font></Button>
-      <Button fx:id="Thirteen" layoutX="535.0" layoutY="119.0" mnemonicParsing="false" onAction="#Move13" prefHeight="38.0" prefWidth="42.6" style="-fx-border-width: 3px;" text="13">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font></Button>
-      <Button fx:id="Twelve" layoutX="493.0" layoutY="119.0" mnemonicParsing="false" onAction="#Move12" prefHeight="38.0" prefWidth="43.0" style="-fx-border-width: 3px;" text="12">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font></Button>
-      <Button fx:id="Ten" layoutX="407.0" layoutY="119.0" mnemonicParsing="false" onAction="#Move10" prefHeight="38.0" prefWidth="42.6" style="-fx-border-width: 3px;" text="10">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font></Button>
+      <HBox layoutX="14.0" layoutY="119.0" prefHeight="51.0" prefWidth="872.0">
+         <children>
+            <Button fx:id="One" mnemonicParsing="false" onAction="#Move1" prefHeight="38.0" prefWidth="42.6" style="-fx-border-image-width: 3px;" text="1">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="Two" mnemonicParsing="false" onAction="#Move2" prefHeight="38.0" prefWidth="42.6" style="-fx-border-width: 3px;" text="2">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="Three" mnemonicParsing="false" onAction="#Move3" prefHeight="38.0" prefWidth="42.6" style="-fx-border-image-width: 3px;" text="3">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="Four" mnemonicParsing="false" onAction="#Move4" prefHeight="38.0" prefWidth="42.6" style="-fx-border-width: 3px;" text="4">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="Five" mnemonicParsing="false" onAction="#Move5" prefHeight="38.0" prefWidth="42.6" style="-fx-border-width: 3px;" text="5">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="Six" mnemonicParsing="false" onAction="#Move6" prefHeight="38.0" prefWidth="42.6" style="-fx-border-width: 3px;" text="6">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="Seven" mnemonicParsing="false" onAction="#Move7" prefHeight="38.0" prefWidth="42.6" style="-fx-border-width: 3px;" text="7">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="Eight" mnemonicParsing="false" onAction="#Move8" prefHeight="38.0" prefWidth="42.6" style="-fx-border-width: 3px;" text="8">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="Nine" mnemonicParsing="false" onAction="#Move9" prefHeight="38.0" prefWidth="42.6" style="-fx-border-width: 3px;" text="9">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="Ten" mnemonicParsing="false" onAction="#Move10" prefHeight="38.0" prefWidth="42.6" style="-fx-border-width: 3px;" text="10">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="Eleven" mnemonicParsing="false" onAction="#Move11" prefHeight="38.0" prefWidth="42.6" style="-fx-border-width: 3px;" text="11">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="Twelve" mnemonicParsing="false" onAction="#Move12" prefHeight="38.0" prefWidth="43.0" style="-fx-border-width: 3px;" text="12">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="Thirteen" mnemonicParsing="false" onAction="#Move13" prefHeight="38.0" prefWidth="42.6" style="-fx-border-width: 3px;" text="13">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="Fourteen" mnemonicParsing="false" onAction="#Move14" prefHeight="38.0" prefWidth="42.6" style="-fx-border-width: 3px;" text="14">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="Fifteen" mnemonicParsing="false" onAction="#Move15" prefHeight="38.0" prefWidth="43.0" style="-fx-border-width: 3px;" text="15">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="Sixteen" mnemonicParsing="false" onAction="#Move16" prefHeight="38.0" prefWidth="42.6" style="-fx-border-width: 3px;" text="16">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="Seventeen" mnemonicParsing="false" onAction="#Move17" prefHeight="38.0" prefWidth="42.6" style="-fx-border-width: 3px;" text="17">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="Twenty" mnemonicParsing="false" onAction="#Move20" prefHeight="38.0" prefWidth="42.6" style="-fx-border-width: 3px;" text="20">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="Nineteen" mnemonicParsing="false" onAction="#Move19" prefHeight="38.0" prefWidth="42.6" style="-fx-border-width: 3px;" text="19">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="Eighteen" mnemonicParsing="false" onAction="#Move18" prefHeight="38.0" prefWidth="42.6" style="-fx-border-width: 3px;" text="18">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="46.0" layoutY="169.0" prefHeight="100.0" prefWidth="798.0" style="-fx-border-color: black; -fx-border-width: 3px;">
+         <children>
+            <Label fx:id="Question" alignment="CENTER" prefHeight="104.0" prefWidth="842.0" style="-fx-background-color: #e3e4d4; -fx-border-width: 2px;" text="Question" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.3552631437778473" green="0.2006578892469406" blue="0.2006578892469406" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.09210526198148727" green="0.04733186960220337" blue="0.04733186960220337" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <ImageView fitHeight="85.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/questionIcon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
    </children>
    <effect>
       <Blend />
