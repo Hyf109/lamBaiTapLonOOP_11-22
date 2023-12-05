@@ -17,7 +17,7 @@ import java.util.ResourceBundle;
 
 
 
-public class Test {
+public class GameController {
     @FXML
     private Button Play;
 
