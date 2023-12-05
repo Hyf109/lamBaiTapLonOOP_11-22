@@ -1,5 +1,18 @@
 #root {
-    -fx-background-color: linear-gradient(to left bottom, #FFF2D8, #EAD7BB, #BCA37F, #113946);
+    -fx-background-image: url("image/backgroundPane.jpg");
+    /*-fx-background-color: linear-gradient(to left bottom, #FFF2D8, #EAD7BB, #BCA37F, #113946);*/
+    -fx-background-size: 1124 721;
+}
+#gameBackground {
+    -fx-background-image: url("image/backgroundQuiz.jpg");
+    -fx-background-size: 838 538;
+
+}
+#game:hover {
+    -fx-background-color: #F4BF96;
+    -fx-border-color: white;
+    -fx-border-width: 0px 0px 0px 3px;
+    -fx-border-radius: 10 10 10 10;
 }
 
 #userButton:hover {

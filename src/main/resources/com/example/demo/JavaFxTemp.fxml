@@ -64,7 +64,7 @@
                      </VBox.margin>
                     </Button>
                   <Separator maxWidth="-Infinity" prefHeight="1.0" prefWidth="152.0" />
-                  <JFXButton fx:id="game" buttonType="RAISED" onAction="#menu" prefHeight="60.0" prefWidth="154.0" ripplerFill="#756a61" style="-fx-background-color: #F4BF96; -fx-background-radius: 20 20 20 20;" stylesheets="@style.css" text="Game" textOverrun="LEADING_ELLIPSIS">
+                  <JFXButton id="game" fx:id="game" buttonType="RAISED" onAction="#menu" prefHeight="60.0" prefWidth="154.0" ripplerFill="#756a61" style="-fx-background-color: #F4BF96; -fx-background-radius: 20 20 20 20;" styleClass="game" stylesheets="@style.css" text="Game" textOverrun="LEADING_ELLIPSIS">
                      <font>
                         <Font name="Gill Sans MT" size="29.0" />
                      </font>

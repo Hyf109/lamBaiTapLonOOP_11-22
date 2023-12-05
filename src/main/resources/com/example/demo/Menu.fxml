@@ -12,16 +12,16 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Test">
+<AnchorPane prefHeight="380.0" prefWidth="838.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Test">
    <children>
-      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="554.0" prefWidth="837.0" style="-fx-background-color: #e3e4d4; -fx-border-color: brown; -fx-border-width: 5px;">
+      <AnchorPane id="gameBackground" fx:id="gameBackground" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="838.0" style="-fx-border-color: brown; -fx-border-width: 5px;" styleClass="gameBackground">
          <children>
             <Label layoutX="123.0" layoutY="57.0" prefHeight="95.0" prefWidth="641.0" text="   ENGLISH LEARNING GAME" textAlignment="CENTER" textFill="#4c20a4">
                <font>
                   <Font name="Castellar" size="37.0" />
                </font>
             </Label>
-            <Button fx:id="Play" layoutX="204.0" layoutY="185.0" mnemonicParsing="false" onAction="#PlayGame" prefHeight="80.0" prefWidth="429.0" style="-fx-background-color: #9489c6; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="  PLAY">
+            <Button id="Play" fx:id="Play" layoutX="204.0" layoutY="185.0" mnemonicParsing="false" onAction="#PlayGame" prefHeight="80.0" prefWidth="429.0" style="-fx-background-color: #9489c6; -fx-border-radius: 50px; -fx-background-radius: 50px;" stylesheets="@game.css" text="  PLAY">
                <font>
                   <Font name="System Bold Italic" size="36.0" />
                </font>
@@ -42,7 +42,7 @@
                   </RadialGradient>
                </textFill>
             </Button>
-            <Button fx:id="Return" layoutX="204.0" layoutY="288.0" mnemonicParsing="false" onAction="#ReturnToMenu" prefHeight="80.0" prefWidth="429.0" style="-fx-background-color: #9489c6; -fx-background-radius: 50PX; -fx-border-radius: 50PX;" text="   RETURN">
+            <Button id="Return" fx:id="Return" layoutX="204.0" layoutY="288.0" mnemonicParsing="false" onAction="#ReturnToMenu" prefHeight="80.0" prefWidth="429.0" style="-fx-background-color: #9489c6; -fx-background-radius: 50PX; -fx-border-radius: 50PX;" stylesheets="@game.css" text="   RETURN">
                <font>
                   <Font name="System Bold Italic" size="36.0" />
                </font>
@@ -63,7 +63,7 @@
                   </LinearGradient>
                </textFill>
             </Button>
-            <Button fx:id="Exit" alignment="CENTER" layoutX="204.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleCloseAction" prefHeight="80.0" prefWidth="429.0" style="-fx-background-color: #9489c6; -fx-background-radius: 50PX; -fx-border-radius: 50PX;" text="   EXIT">
+            <Button id="Exit" fx:id="Exit" alignment="CENTER" layoutX="204.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleCloseAction" prefHeight="80.0" prefWidth="429.0" style="-fx-background-color: #9489c6; -fx-background-radius: 50PX; -fx-border-radius: 50PX;" stylesheets="@game.css" text="   EXIT">
                <font>
                   <Font name="System Bold Italic" size="36.0" />
                </font>

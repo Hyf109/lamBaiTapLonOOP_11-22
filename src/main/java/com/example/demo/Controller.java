@@ -19,7 +19,7 @@ public class Controller {
     private GoogleSearchingFunction googleSearchingFunction;
     private User user;
     private VipFunction vipFunction;
-    private GameButton gameButton;
+//    private GameButton gameButton;
 
 
     public void init(Scene scene) {
@@ -34,7 +34,7 @@ public class Controller {
         googleSearchingFunction = new GoogleSearchingFunction(scene);
         vipFunction = new VipFunction(scene);
         user = new User(scene);
-        gameButton = new GameButton(scene);
+//        gameButton = new GameButton(scene);
     }
 
     public void initData() throws IOException {

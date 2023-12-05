@@ -15,7 +15,7 @@
 
 <AnchorPane fx:id="QuestionPane" prefHeight="641.0" prefWidth="881.0" style="-fx-background-color: #e3e4d4; -fx-border-width: 5px; -fx-border-color: brown;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.QuizController">
    <children>
-      <Button fx:id="A" layoutX="26.0" layoutY="282.0" mnemonicParsing="false" onAction="#AClicked" prefHeight="76.0" prefWidth="842.0" style="-fx-background-color: #44189a; -fx-background-radius: 64px; -fx-border-radius: 10px;" text="Dattebayo" textFill="WHITE">
+      <Button id="opt1" fx:id="A" layoutX="26.0" layoutY="282.0" mnemonicParsing="false" onAction="#AClicked" prefHeight="76.0" prefWidth="842.0" style="-fx-background-color: #44189a; -fx-background-radius: 64px; -fx-border-radius: 10px;" text="Dattebayo" textFill="WHITE">
          <font>
             <Font name="Times New Roman Bold" size="14.0" />
          </font>
